@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  text-align: center;
+  margin: 20px;
+}
+
+.box-model-diagram {
+  display: inline-block;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+.margin {
+  background-color: #fce4ec; /* rosa suave */
+  padding: 20px;
+}
+
+.border {
+  background-color: #e3f2fd; /* azul claro */
+  border: 5px solid #3498db;
+  padding: 20px;
+}
+
+.padding {
+  background-color: #fff9c4; /* amarillo suave */
+  padding: 20px;
+}
+
+.content {
+  background-color: #c8e6c9; /* verde suave */
+  padding: 20px;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}

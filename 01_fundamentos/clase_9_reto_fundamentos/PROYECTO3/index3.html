@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!--==============================================================
+    METADATOS ESENCIALES
+    ==================================================================
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--SEO Básico-->
+  <title>María Zulay Núñez Varela - Mi Perfil Personal | Desarrollador Web en formación</title>
+  <meta name="description"
+    content="Perfil personal de María Zulay Núñez Varela. Desarrollador web en formación aprendiendo HTML, CSS y las mejores prácticas del desarrollo web moderno">
+  <meta name="keywords" content="perfil personal, desarrollador web, portafolio, HTML,CSS, desarrollo web">
+  <meta name="author" content="María Zulay Nuñez Varela">
+  <meta name="robots" content="index, follow">
+
+  <!--Open Graph para Redes Sociales-->
+  <meta property="og:title" content="María Zulay Núñez Varela - Mi Perfil Personal">
+  <meta property="og:description"
+    content="Descubre mi viaje aprendiendo desarrollo web, mis proyectos y mi pasión por la tecnología.">
+  <meta property="og:image" content="https://miperfilpersonal.com/assets/images/og-preview.jpg">
+  <meta property="og:url" content="https://miperfilpersonal.com">
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Mi Perfil Personal">
+
+  <!--Twitter Card-->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="María Zulay Nuñez Varela - desarrollador web">
+  <meta name="twitter:description" content="Mi perfil personal como desarrollador web en formación">
+  <meta name="twitter:image" content="https://miperfilpersonal.com/assets/images/twitter-card.jpg">
+  <meta name="twitter:creator" content="@mariazulaynuñez_dev">
+
+  <!--URLS Canónicas-->
+  <link rel="canonical" href="https://miperfilpersonal.com/">
+  <link rel="alternate" hreflang="es" href="https://miperfilpersonal.com/es/">
+  <link rel="alternate" hreflang="en" href="https://miperfilpersonal.com/en/">
+
+  <!--Favicons-->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="styles3.css">
+
+</head>
+
+<body>
+  <!-- 
+  ========================================
+  HEADER PRINCIPAL
+  ========================================
+  -->
+  <header role="banner">
+    <!-- Logo y Marca Personal -->
+    <div class="brand">
+      <a href="/" aria-label="Mi Perfil Personal - Inicio">
+        <img src="/" alt="Mi Perfil Personal" width="48" height="48">
+        <span></span>
+      </a>
+    </div>
+
+    <!-- Navegación Principal -->
+    <nav>
+      <ul>
+        <li><a href="/" aria-current="page">Inicio</a></li>
+        <li><a href="/sobre-mi.html">Sobre mí</a></li>
+        <li> <a href="/habilidades.html">Habilidades</a></li>
+        <li><a href="/proyectos.html">Proyectos</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!-- Acciones Rápidas -->
+    <div class="header-actions">
+      <a href="/assets/documents/cv-mariazulaynuñezvarela.pdf" download aria-label="Descargar CV en PDF">
+        📄 CV
+      </a>
+
+      <!-- Selector de Idioma -->
+      <select aria-label="Seleccionar idioma">
+        <option value="es" selected>ES</option>
+        <option value="en">EN</option>
+      </select>
+    </div>
+  </header>
+
+  <!-- 
+  ========================================
+  CONTENIDO PRINCIPAL
+  ========================================
+  -->
+  <main>
+    <!-- Hero Section -->
+    <section aria-labelledby="hero-titulo">
+      <h1 id="hero-titulo">¡Hola! Soy María Zulay Núñez Varela</h1>
+      <p><strong>Desarrollador Web en Formación</strong></p>
+      <p>
+        Estoy aprendiendo HTML Y CSS para crear sitios web hermosos
+        y funcionales. Mi pasión: transformar ideas en experiencias
+        web increibles.
+      </p>
+
+    <!-- Call to Actions -->
+      <div class="hero-actions">
+        <a href="#proyectos-destacados">Ver Mis Proyectos</a>
+        <a href="/contacto.html">Contáctame</a>
+      </div>
+
+    <!-- Estadísticas Rápidas -->
+      <div>
+        <div>
+          <data value="24">24</data>
+          <span>Meses aprendiendo</span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <data value="8">8</data>
+          <span>Proyectos completados</span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <data value="5">5</data>
+          <span>Tecnologías</span>
+        </div>
+      </div>
+
+    <!-- Imagen de Perfil -->
+      <figure>
+        <picture>
+          <source media="(min-width: 768px)" srcset="/assets/images/perfil/maría-desktop.webp" type="image/webp">
+          <source media="(min-width: 768px)" srcset="/assets/images/perfil/maría-desktop.jpg">
+          <img src="/assets/images/perfil/maria-mobile.jpg"
+            alt="María Zulay Núñez Varela - Desarrollador web en Formación" width="500" height="500" loading="eager">
+        </picture>
+        <figcaption>María Zulay Núñez Varela en su espacio de trabajo</figcaption>
+      </figure>
+    </section>
+
+    <!-- Sección Sobre Mí -->
+    <section aria-labelledby="about-titulo">
+      <h2 id="about-titulo">Mi Viaje en el Desarrollo Web</h2>
+      <p>Me apasiona la tecnologia y el diseño. Cada día descubro
+        nuevas formas de mejorar mis habilidades y crear
+        <em>mejores experiencias web</em>.
+      </p>
+
+      <blockquote>
+        <p>
+          "El buen diseño es obvio. El gran diseño es transparente.
+          Mi objetivo es crear sitios que sean ambos: bellos
+          y funcionales. "
+        </p>
+        <cite>Mi filosofía de aprendizaje</cite>
+      </blockquote>
+
+      <!-- Valores Personales -->
+      <h3>Mis valores</h3>
+      <dl>
+        <dt>Dedicación</dt>
+        <dd>Comprometida con mi aprendizaje diario</dd>
+
+        <dt>Curiosidad</dt>
+        <dd>Siempre explorando nuevas tecnologías</dd>
+
+        <dt>Comunidad</dt>
+        <dd>Aprendiendo y compartiendo con otros</dd>
+
+        <dt>Creatividad</dt>
+        <dd>Buscando soluciones innovadoras</dd>
+      </dl>
+
+      <a href="/sobre-mi.html">
+        Conoce más sobre mí
+      </a>
+    </section>
+
+    <!-- Proyectos Destacados -->
+    <section id="proyects-titulo" aria-labelledby="proyects-titulo">
+      <h2 id="projects-titulo">Mis Proyectos de Práctica</h2>
+      <p>
+        Cada proyecto representa mi progreso aprendiendo desarrollo web.
+        Desde páginas simples hasta este portafolio completo.
+      </p>
+
+      <!-- Proyecto 1 -->
+      <article>
+        <figure>
+          <picture>
+            <source type="image/web" srcset="/assets/images/proyectos/primer-sitio-web">
+            <img src="assets/images/proyectos/primer-sitio.jpg" alt="Captura de mi primer sitio web con HTML y CSS"
+              width="800" height="600" loading="lazy">
+          </picture>
+          <figcaption>Mi Primer Sitio Web - HTML y CSS básico</figcaption>
+        </figure>
+
+        <h3>Mi Primer Sitio Web</h3>
+        <p>
+          Mi primer proyecto completo HTML y CSS. Una página
+          simple pero bien estructurada donde aplique los conceptos
+          básicos aprendidos.
+        </p>
+
+        <h4>Lo que aprendí</h4>
+        <ul>
+          <li>Estructura semántica de HTML</li>
+          <li>Box Model y layout básico</li>
+          <li>Estilos CSS fundamentales</li>
+          <li>principios básicos de accesibilidad</li>
+          <li>Introducción al diseño responsivo</li>
+        </ul>
+
+        <h4>Tecnologías usadas</h4>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+
+        <H4>Logros del proyecto</H4>
+        <div>
+          <data value="100">100%</data> HTML válido
+        </div>
+        <div>
+          <data value="0">0</data> Errores de accesibilidad
+        </div>
+        <div>
+          <data value="95">95</data> Score en lighthouse
+        </div>
+
+        <a href="/proyectos/primer-sitio.html">
+          Ver detalles del proyecto
+        </a>
+        <a href="https://demo.miprimer-sitio.com" target="_blank" rel="noopener">
+          Ver demo
+        </a>
+      </article>
+
+      <a href="/proyectos.html">
+        Ver todos los proyectos
+      </a>
+    </section>
+
+    <!-- Habilidades Técnicas -->
+    <section aria-labelledby="skills-titulo">
+      <h2 id="skills-titulo">Mis habilidades</h2>
+
+      <h3>Tecnologías que estoy aprendiendo</h3>
+      <ul>
+        <li>
+          <img src="/assets/icons/html5.svg" alt="" width="40" height="40" aria-hidden="true">
+          <span>HTML & Semántica</span>
+          <progress value="75" max="100" aria-label="75% de dominio">
+            75%
+          </progress>
+        </li>
+        <li>
+          <img src="/assets/icons/css3.svg" alt="" width="40" height="40" aria-hidden="true">
+          60%
+        </li>
+        <li>
+          <img src="/assets/icons/javascrip.svg" alt="" width="49" height="40" aria-hidden="true">
+          <span>JavaScript (Comenzando)</span>
+          <progress value="20" max="100" aria-label="20% de dominio">
+            20%
+          </progress>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Blog Reciente -->
+    <section>
+      <h2>Mi Blog de Aprendizaje</h2>
+      <p>
+        Comparto mi experiencia aprendiendo desarrollo web.
+      </p>
+
+      <!-- Artículo 1 -->
+      <article>
+        <time datetime="2025-01-15">15 Enero 2025</time>
+        <h3>
+          <a href="/blog/mi.primer-mes.html">
+            Mi Primer Mes Aprendiendo HTML
+          </a>
+        </h3>
+        <P>
+          Reflexiones sobre lo que aprendi en mi primer mes
+          estudiando desarrollo web
+        </P>
+        <span>5 min de lectura</span>
+      </article>
+
+      <!-- Artículo 2 -->
+      <article>
+        <time datetime="2025-01-08">8 Enero 2025</time>
+        <h3>
+          <a href="/blog/recursos-utiles.html">
+            5 Recursos Gratuitos Para Aprender HTML
+          </a>
+        </h3>
+        <P>
+          Los mejores recursos que encontré para estudiar
+          desarrollo web desde cero
+        </P>
+        <span>3 min de lectura</span>
+      </article>
+
+      <a href="/blog.html">
+        Ver todos los artículos
+      </a>
+    </section>
+
+    <!-- Call to Action -->
+    <section aria-label="cta-titulo">
+      <h2 id="cta-titulo">Te gustaría conectar?</h2>
+      <p>
+        Siempre estoy buscando aprender de otros desarrolladores,
+        compartir experiencias y tal vez colaborar en proyectos
+        interesantes.
+      </p>
+
+      <div>
+        <h3>Proyectos de Práctica</h3>
+        <p>Tienes una idea? Colaboremos y aprendamos juntos</p>
+        <a href="/contacto.html#colaborar">Colaborar</a>
+      </div>
+
+      <div>
+        <h3>Conectemos</h3>
+        <p>Eres principiante tambien? Aprendamos juntos</p>
+        <a href="/contacto.html#conectar">Conectar</a>
+      </div>
+
+      <div>
+        <h3>Recursos</h3>
+        <p>Compartamos recursos y tipos de aprendizaje</p>
+        <a href="/contacto.html#recursos">Compartir</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- 
+    ========================================
+    FOOTER COMPLETO
+    ========================================
+    -->
+  <footer>
+    <!-- Sobre Mi Perfil Personal -->
+    <section aria-labelledby="footer-about">
+      <h2 id="footer-about">Mi Perfil Personal</h2>
+      <p>
+        Portafolio personal de María Zulay Núñez Varela.
+        Aprendiendo desarrollo web un día a la vez.
+      </p>
+
+      <!-- Newsletter -->
+      <form action="/newsletter" method="POST">
+        <label for="newsletter-email">
+          Suscribete a mi newsletter
+        </label>
+        <input type="email" id="newsletter-email" name="email" placeholder="tu@email.com" required aria-required="true">
+        <button type="submit">Suscribir</button>
+      </form>
+    </section>
+
+    <!-- Enlaces del Footer -->
+    <nav>
+      <ul>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/sobre-mi.html">Sobre mí</a></li>
+        <li><a href="/proyectos-html">Proyectos</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/contacto.html">Contactos</a></li>
+      </ul>
+    </nav>
+
+    <!-- Contacto -->
+    <section aria-labelledby="footer-contact">
+      <h2 id="footer-contact">Contacto</h2>
+      <address>
+        <dl>
+          <dt>Email</dt>
+          <dd>
+            <a href="mailto:zulay@miperfilpersonal.com">
+              zulay@miperfilpersonal.com
+            </a>
+          </dd>
+
+          <dt>Linkedin</dt>
+          <dd>
+            <a href="https://linkedin.com/mariazulay-nuñez-dev" target="blank" rel="noopener">
+              @mariazulaynuñez
+            </a>
+          </dd>
+
+          <dt>Github</dt>
+          <dd>
+            <a href="https://github.com/zulay02">
+              @zulay02
+            </a>
+          </dd>
+
+          <dt>Ubicacion</dt>
+          <dd>Chinçota Norte de Santander, Colombia</dd>
+        </dl>
+      </address>
+    </section>
+
+    <!-- Redes Sociales -->
+    <section aria-labelledby="footer-social">
+      <h2 id="footer-social">Sígueme</h2>
+      <ul>
+        <li>
+          <a href="https://github.com/zulay02" target="_blank" rel="noopener"
+            aria-label="GitHub de María Zulay Núñez Varela">
+            GitHub</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/mariazulaynuñez_dev" target="_blank" rel="noopener"
+            aria-label="Twitter de Maria Zulay Nuñez Varela">
+            Twitter
+          </a>
+        </li>
+
+        <li>
+          <a href="https://linkedin.com/in/mariazulay-nuñez-dev" target="_blank" rel="noopener"
+            aria-label="Linkedin de Maria Zulay Nuñez Varela">
+            Linkedin
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Descargas -->
+    <a href="/assets/documents/cv-mariazulay-nuñez-pdf" download>
+      📄 Descargar mi CV (PDF)
+    </a>
+    </section>
+
+    <!-- Footer Bottom -->
+    <div>
+      <p>&copy; 2025 María Zulay Núñez Varela - Mi Perfil Personal. Todos los derechos reservados</p>
+
+      <nav aria-label="Enlaces legales">
+        <a href="/privacidad.html">Privacidad</a>
+        <a href="/terminos.html">Términos</a>
+        <a href="/accesibilidad.html">Accesibilidad</a>
+      </nav>
+
+      <p>
+        Diseñado y desarrollado por María Zulay Núñez Varela
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>

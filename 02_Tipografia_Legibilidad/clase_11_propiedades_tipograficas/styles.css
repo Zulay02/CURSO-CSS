@@ -1,0 +1,15 @@
+.normal {
+    font-size: 3rem;
+}
+
+.light {
+    font-weight: 400;
+}
+
+.compact {
+    line-height:1.5;
+}
+
+.italic{
+    font-style: italic;
+}

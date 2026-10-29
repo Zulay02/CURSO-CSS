@@ -1,0 +1,162 @@
+/* ==========================================================================
+   1. VARIABLES Y CONFIGURACIÓN ESTRUCTURAL (El "Esqueleto" Visual)
+   Instrucciones: Aquí definimos la paleta de colores cálidos y la tipografía.
+   Si deseas cambiar un color en todo el sitio, solo debes editarlo aquí.
+   ========================================================================== */
+:root {
+  /* Paleta de colores cálidos */
+  --color-fondo: #fbf8f5;       /* Arena suave, muy descansado para la vista */
+  --color-superficie: #ffffff;  /* Blanco puro para tarjetas y bloques */
+  --color-primario: #d46a43;    /* Terracota cálido para elementos principales */
+  --color-secundario: #e6b041;  /* Ocre/Oro para detalles y acentos */
+  --color-texto-oscuro: #3e2723;/* Marrón café profundo (evita el negro puro, es más amigable) */
+  --color-texto-mutado: #795548;/* Marrón medio para textos secundarios o instrucciones */
+  
+  /* Fuentes y Sombras */
+  --fuente-principal: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --sombra-suave: 0 4px 20px rgba(62, 39, 35, 0.08);
+  --sombra-fuerte: 0 10px 30px rgba(62, 39, 35, 0.15);
+  --borde-redondeado: 16px;
+  --transicion-suave: all 0.3s ease;
+}
+
+/* Reset básico para limpiar márgenes del navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  background-color: var(--color-fondo);
+  color: var(--color-texto-oscuro);
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* ==========================================================================
+   2. ENCABEZADO (Header / Hero)
+   Instrucciones: Diseñado para causar un gran impacto visual. Usamos un 
+   degradado cálido continuo y esquinas redondeadas elegantes.
+   ========================================================================== */
+header {
+  background: linear-gradient(135deg, var(--color-primario), #b8532b);
+  color: #ffffff;
+  padding: 60px 30px;
+  text-align: center;
+  border-radius: var(--borde-redondeado);
+  margin-bottom: 40px;
+  box-shadow: var(--sombra-fuerte);
+}
+
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  letter-spacing: -0.5px;
+}
+
+header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+/* ==========================================================================
+   3. SECCIONES DE CONTENIDO (Main / Sections / Cards)
+   Instrucciones: Las secciones se comportan como "tarjetas" flotantes sobre
+   el fondo arena. Tienen transiciones suaves para cuando el usuario pasa el mouse.
+   ========================================================================== */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section {
+  background-color: var(--color-superficie);
+  padding: 35px;
+  margin-bottom: 30px;
+  border-radius: var(--borde-redondeado);
+  box-shadow: var(--sombra-suave);
+  border-left: 5px solid var(--color-secundario); /* Detalle elegante en el borde izquierdo */
+  transition: var(--transicion-suave);
+}
+
+/* Efecto "espectacular" al pasar el cursor sobre una sección */
+section:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--sombra-fuerte);
+}
+
+section h2 {
+  color: var(--color-primario);
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+/* ==========================================================================
+   4. BLOQUE DE INSTRUCCIONES INTERNAS
+   Instrucciones: Si colocas textos informativos, guías o notas dentro de tus 
+   secciones (por ejemplo, usando etiquetas <p class="instrucciones">), 
+   este estilo hará que destaquen de forma sutil y muy estética.
+   ========================================================================== */
+.instrucciones {
+  background-color: #fff9f0; /* Fondo crema muy suave */
+  border: 1px dashed var(--color-secundario);
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin: 15px 0;
+  font-size: 0.95rem;
+  color: var(--color-texto-mutado);
+  font-style: italic;
+}
+
+/* ==========================================================================
+   5. ELEMENTOS INTERACTIVOS (Botones y Enlaces)
+   Instrucciones: Botones llamativos con micro-interacciones (cambio de color
+   y tamaño al presionarlos o pasar el cursor).
+   ========================================================================== */
+a {
+  color: var(--color-primario);
+  text-decoration: none;
+  transition: var(--transicion-suave);
+}
+
+a:hover {
+  color: var(--color-secundario);
+}
+
+button, .boton {
+  display: inline-block;
+  background-color: var(--color-primario);
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px; /* Bordes completamente redondeados tipo píldora */
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transicion-suave);
+  box-shadow: 0 4px 10px rgba(212, 106, 67, 0.3);
+}
+
+button:hover, .boton:hover {
+  background-color: var(--color-texto-oscuro);
+  color: var(--color-secundario);
+  transform: scale(1.03);
+}
+
+/* ==========================================================================
+   6. PIE DE PÁGINA (Footer)
+   Instrucciones: Cierre del sitio web con un tono chocolate muy sutil que
+   engloba toda la paleta cálida.
+   ========================================================================== */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 50px;
+  color: var(--color-texto-mutated);
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(62, 39, 35, 0.1);
+}

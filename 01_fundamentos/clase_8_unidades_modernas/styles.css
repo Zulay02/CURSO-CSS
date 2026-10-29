@@ -1,0 +1,63 @@
+/* ============================
+   CONTENEDOR PRINCIPAL
+   ============================ */
+.container {
+    border: 2px solid black;  /* Borde negro alrededor del contenedor */
+    padding: 16px;              /* Espacio interno entre el borde y el contenido */
+    margin-bottom: 24px;        /* Espacio externo debajo del contenedor */
+}
+
+/* ============================
+   CAJA GENÉRICA
+   ============================ */
+.box {
+   border: 1px solid red;      /* Borde rojo alrededor de la caja */
+   padding: 16px;                /* Espacio interno dentro de la caja */
+   margin-bottom: 16px;          /* Espacio externo debajo de la caja */
+   background-color: #f0f0f0;  /* Fondo gris claro */
+}
+
+/* ============================
+   CAJA CON ANCHO FIJO EN PIXELES
+   ============================ */
+.box-px {
+    width: 200px;               /* Ancho fijo de 200 píxeles */
+}
+
+/* ============================
+   CAJA CON ANCHO RELATIVO AL CONTENEDOR
+   ============================ */
+.box-percent {
+    width: 50%;                 /* Ocupa el 50% del ancho del contenedor padre */
+}
+
+/* ============================
+   CAJA CON ANCHO EN REM
+   ============================ */
+.box-rem {
+    width: 15rem;               /* Ancho basado en la raíz (html), 15 veces el tamaño de fuente raíz */
+}
+
+/* ============================
+   CAJA CON ANCHO EN EM
+   ============================ */
+.box-em {
+    font-size: 20px;            /* Define el tamaño de fuente base para esta caja */
+    width: 1em;                 /* Ancho relativo al tamaño de fuente de la caja (20px en este caso) */
+}
+
+/* ============================
+   CAJA CON ANCHO EN VW
+   ============================ */
+.box-vw {
+    width: 30vw;                /* Ocupa el 30% del ancho de la ventana del navegador */
+}
+
+/* ============================
+   CAJA CON ALTURA EN VH
+   ============================ */
+.box-vh {
+   height: 20vh;                /* Ocupa el 20% de la altura de la ventana del navegador */
+}
+
+

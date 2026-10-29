@@ -1,0 +1,176 @@
+/* Variables de diseño */
+:root {
+  --primary-color: #2563eb;
+  --text-color: #1e293b;
+  --bg-header: #ffffff;
+  --hover-color: #1d4ed8;
+  --accent-bg: #f1f5f9;
+  --border-color: #e2e8f0;
+  --transition: all 0.3s ease;
+  --max-width-container: 1200px; /* Aquí controlas el ancho máximo del header */
+}
+
+/* Estilos del Header General */
+.main-header {
+  background-color: var(--bg-header);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 0 1.5rem; /* Espaciado interno lateral */
+}
+
+/* Contenedor interno que reduce y centra el tamaño total */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--max-width-container);
+  margin: 0 auto; /* Centra todo el bloque en la pantalla */
+  padding: 0.75rem 0; /* Controla la altura del header */
+  width: 100%;
+}
+
+/* 1. Izquierda: Logotipo (Tamaño adecuado y controlado) */
+.brand {
+  flex: 1; /* Ocupa espacio equitativo a la izquierda */
+  display: flex;
+  justify-content: flex-start;
+}
+
+.brand a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.brand img {
+  height: 32px; /* Tamaño ideal y estilizado para el logo */
+  width: auto;
+  object-fit: contain;
+}
+
+.brand-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-color);
+  letter-spacing: 0.5px;
+}
+
+/* 2. Centro: Navegación Principal */
+.main-nav {
+  flex: 2; /* Le da más espacio al centro para asegurar el alineado */
+  display: flex;
+  justify-content: center;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.75rem;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: var(--transition);
+}
+
+/* Línea animada en Hover y Página Activa */
+.main-nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  transition: var(--transition);
+}
+
+.main-nav a:hover::after,
+.main-nav a[aria-current="page"]::after {
+  width: 100%;
+}
+
+.main-nav a[aria-current="page"] {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* 3. Derecha: Acciones (CV e Idioma) */
+.header-actions {
+  flex: 1; /* Ocupa espacio equitativo a la derecha */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Botón de CV */
+.header-actions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+  color: var(--text-color);
+  background-color: var(--accent-bg);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  transition: var(--transition);
+  border: 1px solid var(--border-color);
+}
+
+.header-actions a:hover {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border-color: var(--primary-color);
+}
+
+/* Selector de Idioma */
+.header-actions select {
+  padding: 0.4rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-header);
+  color: var(--text-color);
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+}
+
+/* 4. Responsive (Pantallas Medianas y Móviles) */
+@media (max-width: 900px) {
+  .header-container {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem 0;
+  }
+  
+  .brand, .main-nav, .header-actions {
+    flex: none;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .main-nav {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 0.25rem;
+  }
+  
+  .main-nav ul {
+    gap: 1.25rem;
+  }
+}
