@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EJEMPLO INTERACTIVO</title>
+  <link rel="stylesheet" href="stylos.css">
+
+</head>
+<body>
+  <h2>Ejemplo interactivo de sistemas de color en CSS</h2>
+  <div class="container">
+    <!-- Bloque HEX -->
+    <div class="color-box hex">HEX</div>
+    <!-- Bloque RGB -->
+    <div class="color-box rgb">RGB</div>
+    <!-- Bloque HSL (Hue controlado por slider) -->
+    <div class="color-box hsl" id="hslBox">HSL</div>
+    <!-- Bloque RGBA (Alpha controlado por slider) -->
+    <div class="color-box rgba" id="rgbaBox">RGBA</div>
+  </div>
+
+   <!-- Control deslizante para transparencia RGBA -->
+  <div class="slider-container">
+    <label for="alphaRange">Transparencia RGBA (Alpha): </label>
+    <!-- Slider de 0 (transparente) a 1 (opaco) -->
+    <input type="range" id="alphaRange" min="0" max="1" step="0.05" value="0.5">
+  </div>
+
+  <!-- Control deslizante para matiz HSL -->
+  <div class="slider-container">
+    <label for="hueRange">Matiz HSL (Hue): </label>
+    <!-- Slider de 0 a 360 grados → círculo cromático completo -->
+    <input type="range" id="hueRange" min="0" max="360" step="5" value="0">
+  </div>
+  <!-- Conexión con JavaScript externo -->
+  <script src="./script.js"></script>
+
+</body>
+</html>

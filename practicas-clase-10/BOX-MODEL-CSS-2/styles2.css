@@ -1,0 +1,103 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Caja principal del Box Model */
+.box-model {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.content {
+    width: 200px;
+    padding: 20px;
+    border: 5px solid #3498db;
+    margin: 10px;
+    background-color: #e8f4f8;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Comparación content-box vs border-box */
+.content-box {
+    width: 200px;
+    padding: 20px;
+    border: 5px solid #27ae60;
+    margin: 10px 0;
+    background-color: #ecf9f1;
+    box-sizing: content-box; /* default */
+}
+
+.border-box {
+    width: 200px;
+    padding: 20px;
+    border: 5px solid #e67e22;
+    margin: 10px 0;
+    background-color: #fff3e6;
+    box-sizing: border-box;
+}
+
+/* Margin collapse */
+.margin-box-1 {
+    background-color: #d6eaf8;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 1px solid #3498db;
+}
+
+.margin-box-2 {
+    background-color: #fadbd8;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #e74c3c;
+}
+
+/* Padding vs Margin */
+.only-padding {
+    background-color: #fef9e7;
+    padding: 20px;
+    border: 1px solid #f1c40f;
+    margin-bottom: 10px;
+}
+
+.only-margin {
+    background-color: #e8daef;
+    margin: 20px;
+    border: 1px solid #8e44ad;
+    padding: 10px;
+}
+
+
+/* 📱 Responsive */
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+
+    .content,
+    .content-box,
+    .border-box,
+    .margin-box-1,
+    .margin-box-2,
+    .only-padding,
+    .only-margin {
+        width: 100%;       /* ocupa todo el ancho disponible */
+        margin: 10px 0;    /* márgenes verticales */
+    }
+
+    h1, h2 {
+        font-size: 1.2em;  /* títulos más pequeños en móviles */
+    }
+}

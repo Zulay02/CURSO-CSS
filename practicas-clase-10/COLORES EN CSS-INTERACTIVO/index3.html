@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colores en CSS - Interactivo</title>
+    <!-- Conexión con CSS externo -->
+    <link rel="stylesheet" href="styles3.css">
+    <!-- CORREGIDO: se quitó la línea <script>sr</script> que sobraba -->
+</head>
+
+<body>
+  <!-- CORREGIDO: el título ahora está dentro del <body> -->
+  <h2>Ejemplo de sistemas de color en CSS</h2>
+
+  <!-- CORREGIDO: se agregó class="container" para que las cajas queden en fila -->
+  <div class="container">
+    <div class="color-box hex">HEX</div>
+    <div class="color-box rgb">RGB</div>
+    <div class="color-box hsl">HSL</div>
+    <!-- CORREGIDO: se agregó id="rgbaBox" para que el JavaScript encuentre esta caja -->
+    <div class="color-box rgba" id="rgbaBox">RGBA</div>
+  </div>
+
+  <div class="slider-container">
+    <label for="alphaRange">Transparencia RGBA (Alpha): </label>
+    <input type="range" id="alphaRange" min="0" max="1" step="0.05" value="0.5">
+  </div>
+
+  <!-- Conexión con JavaScript externo -->
+  <script src="./script3.js"></script>
+</body>
+</html>

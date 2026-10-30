@@ -1,0 +1,31 @@
+body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+    .container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .color-box {
+      width: 150px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .hex { background-color: #ff5733; }
+    .rgb { background-color: rgb(57, 152, 219); }
+    .hsl { background-color: hsl(0, 50%, 30%); }
+    .rgba { background-color: rgba(231, 76, 60, 0.5); transition: background-color 0.3s; }
+    .slider-container {
+      margin-top: 20px;
+    }
+    input[type=range] {
+      width: 300px;
+    }

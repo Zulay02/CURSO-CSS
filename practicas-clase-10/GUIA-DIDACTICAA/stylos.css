@@ -1,0 +1,55 @@
+body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+    h2, h3 {
+      margin-top: 30px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    table, th, td {
+      border: 1px solid #333;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .color-box {
+      width: 150px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    /* HEX → Color fijo en formato #RRGGBB */
+    .hex { background-color: #ff5733; }
+
+    /* RGB → Color definido con valores de rojo, verde y azul (0–255) */
+    .rgb { background-color: rgb(57, 152, 219); }
+
+    /* HSL → Color definido por matiz (Hue), saturación y luminosidad */
+    .hsl { background-color: hsl(0, 50%, 30%); transition: background-color 0.3s; }
+
+    /* RGBA → Igual que RGB pero con canal Alpha (transparencia) */
+    .rgba { background-color: rgba(231, 76, 60, 0.5); transition: background-color 0.3s; }
+
+    .slider-container {
+      margin-top: 20px;
+    }
+    input[type=range] {
+      width: 300px;
+    }

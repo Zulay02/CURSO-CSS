@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guía didáctica - Sistemas de color en CSS</title>
+  <link rel="stylesheet" href="./stylos.css">
+</head>
+<body>
+  <h2>Tabla comparativa de sistemas de color en CSS</h2>
+  <!-- Tabla explicativa con definiciones y usos -->
+  <table>
+    <tr>
+      <th>Sistema</th>
+      <th>Ejemplo CSS</th>
+      <th>Definición</th>
+      <th>Cuándo usarlo</th>
+    </tr>
+    <tr>
+      <td>HEX</td>
+      <td>#ff5733</td>
+      <td>Código hexadecimal que representa valores de rojo, verde y azul.</td>
+      <td>Colores fijos y precisos, paletas estáticas.</td>
+    </tr>
+    <tr>
+      <td>RGB</td>
+      <td>rgb(57, 152, 219)</td>
+      <td>Define el color con valores de rojo, verde y azul (0–255).</td>
+      <td>Manipulación dinámica, gradientes, mezcla de luz.</td>
+    </tr>
+    <tr>
+      <td>HSL</td>
+      <td>hsl(0, 50%, 30%)</td>
+      <td>Usa matiz (Hue), saturación y luminosidad.</td>
+      <td>Variaciones intuitivas de color, sistemas de diseño.</td>
+    </tr>
+    <tr>
+      <td>RGBA</td>
+      <td>rgba(231, 76, 60, 0.5)</td>
+      <td>Igual que RGB pero con canal Alpha (transparencia).</td>
+      <td>Overlays, efectos de transparencia, capas visuales.</td>
+    </tr>
+  </table>
+
+  <h3>Ejemplo interactivo</h3>
+  <p>
+    Abajo verás bloques de color y dos controles deslizantes:<br>
+    - Uno para ajustar la transparencia del bloque RGBA.<br>
+    - Otro para modificar el matiz (Hue) del bloque HSL.
+  </p>
+
+  <div class="container">
+    <!-- Bloque HEX → Color fijo -->
+    <div class="color-box hex">HEX</div>
+    <!-- Bloque RGB → Color fijo -->
+    <div class="color-box rgb">RGB</div>
+    <!-- Bloque HSL → Matiz controlado por slider -->
+    <div class="color-box hsl" id="hslBox">HSL</div>
+    <!-- Bloque RGBA → Transparencia controlada por slider -->
+    <div class="color-box rgba" id="rgbaBox">RGBA</div>
+  </div>
+
+  <!-- Slider para transparencia RGBA -->
+  <div class="slider-container">
+    <label for="alphaRange">Transparencia RGBA (Alpha): </label>
+    <input type="range" id="alphaRange" min="0" max="1" step="0.05" value="0.5">
+  </div>
+
+  <!-- Slider para matiz HSL -->
+  <div class="slider-container">
+    <label for="hueRange">Matiz HSL (Hue): </label>
+    <input type="range" id="hueRange" min="0" max="360" step="5" value="0">
+  </div>
+  <!-- CORREGIDO: faltaba conectar el JavaScript; sin esta línea las barritas no funcionaban -->
+  <script src="./script.js"></script>
+</body>
+</html>

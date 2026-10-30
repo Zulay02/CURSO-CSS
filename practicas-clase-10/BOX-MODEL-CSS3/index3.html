@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Model</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+
+<body>
+     <h1>Box Model CSS</h1>
+     <!-- BOX MODEL VISUAL -->
+      <div class="box-model">
+        <div class="content">CONTENT</div>
+      </div>
+
+     <!-- COMPARACIÓN -->
+      <h2>Content-box vs Border-box</h2>
+
+      <!-- CORREGIDO: se agregó el contenedor .comparison (Grid) que ya estaba en el CSS -->
+      <div class="comparison">
+        <div class="content-box">Content-box (default) width = content</div>
+        <div class="border-box">Border-box width = content + padding + border</div>
+      </div>
+
+     <!-- MARGIN COLLAPSE -->
+      <h2>Margin Collapse</h2>
+      <div class="margin-box-1">Margin bottom: 30px</div>
+      <div class="margin-box-2">Margin top: 20px</div>
+      <p>Espacio real: 30px (no 50px)</p>
+      <!-- CORREGIDO: se quitó un <h1>Box-Model</h1> repetido que estaba aquí -->
+
+     <!-- PADDING VS MARGIN -->
+      <h2>Padding vs Margin</h2>
+      <!-- CORREGIDO: se agregó el contenedor .padding-margin (Flexbox) que ya estaba en el CSS -->
+      <div class="padding-margin">
+        <div class="only-padding">Solo padding (espacio interior)</div>
+        <!-- CORREGIDO: decía "only-marging"; ahora coincide con el CSS: "only-margin" -->
+        <div class="only-margin">Solo margin (espacio exterior)</div>
+      </div>
+</body>
+
+</html>
